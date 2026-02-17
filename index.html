@@ -1,24 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="https://fr.wikipedia.org/static/favicon/wikipedia.ico" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWLK0PZVBM"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HWLK0PZVBM', { send_page_view: false });
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HWLK0PZVBM', { send_page_view: false });
     </script>
-  </head>
-  <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Styles de base pour le camouflage */
+        #wiki-camouflage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+            background: white;
+            overflow-y: auto;
+            font-family: 'serif', 'Georgia', 'Times New Roman';
+            color: #202122;
+        }
+        .wiki-sidebar {
+            width: 160px;
+            padding: 1rem;
+            border-right: 1px solid #a7d7f9;
+            background: #f6f6f6;
+        }
+        .wiki-content {
+            flex: 1;
+            padding: 2rem;
+            max-width: 900px;
+        }
+        .wiki-header {
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 1rem;
+        }
+        .premium-btn {
+            color: #54595d;
+            cursor: pointer;
+            margin-top: 50px;
+            font-size: 11px;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 5px;
+        }
+        .premium-btn:hover {
+            border: 1px solid #ddd;
+            background: #eee;
+        }
+        /* Cacher le root quand le camouflage est actif */
+        #root {
+            display: none;
+        }
+        body.unlocked #root {
+            display: block;
+        }
+        body.unlocked #wiki-camouflage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- L'application DogeProxy se chargera ici -->
     <div id="root"></div>
+
+    <!-- Interface de camouflage -->
+    <div id="wiki-camouflage">
+        <div class="flex min-h-screen">
+            <!-- Sidebar -->
+            <div class="wiki-sidebar hidden md:block">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo-v2-fr.png" alt="Wiki" class="w-full mb-6">
+                <div class="text-[12px] space-y-3 text-blue-700">
+                    <p>Accueil</p>
+                    <p>Portails thématiques</p>
+                    <p>Article au hasard</p>
+                    <p>Contact</p>
+                    <div class="h-px bg-gray-300 my-2"></div>
+                    <p class="text-black font-bold">Contribuer</p>
+                    <p>Débuter sur Wikipédia</p>
+                    <p>Aide</p>
+                    <div id="premium-trigger" class="premium-btn">Accès Premium</div>
+                </div>
+            </div>
+
+            <!-- Main Text -->
+            <div class="wiki-content">
+                <div class="wiki-header flex justify-between items-end">
+                    <h1 class="text-4xl mb-1">Réseau informatique</h1>
+                    <div class="text-sm pb-1 space-x-3">
+                        <span class="font-bold border-b-2 border-orange-500 pb-2">Article</span>
+                        <span class="text-blue-700">Discussion</span>
+                    </div>
+                </div>
+                
+                <p class="text-[13px] mb-6 italic text-gray-500">Un article de Wikipédia, l'encyclopédie libre.</p>
+
+                <div class="bg-gray-50 border border-gray-300 p-4 mb-6 text-[14px] leading-relaxed">
+                    Un <b>réseau informatique</b> (en anglais, <i>data network</i>) est un ensemble d'équipements reliés entre eux pour échanger des informations. Par analogie avec un filet (un réseau est un « petit rets », c'est-à-dire un petit filet), on appelle nœud l'extrémité d'une connexion, qui peut être une intersection de plusieurs connexions ou équipements (un ordinateur, un routeur, un concentrateur, un commutateur).
+                </div>
+
+                <div class="float-right ml-4 mb-4 border border-gray-300 bg-white p-2 w-64">
+                    <div class="bg-[#cedff2] text-center font-bold p-1 text-[14px]">Réseau informatique</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Internet_layering.svg/220px-Internet_layering.svg.png" class="w-full h-auto p-2">
+                    <div class="text-[11px] p-2">Le modèle OSI à sept couches est la référence pour l'interconnexion des systèmes.</div>
+                </div>
+
+                <h2 class="text-2xl border-b border-gray-300 mt-6 mb-4">Histoire</h2>
+                <p class="text-[14px] leading-relaxed mb-4">
+                    Dans les années 1960, les premiers réseaux informatiques ont été créés pour des besoins militaires (comme ARPANET). Le concept était de permettre à des ordinateurs distants de partager des ressources de calcul et de données de manière décentralisée.
+                </p>
+
+                <h2 class="text-2xl border-b border-gray-300 mt-6 mb-4">Sécurité des réseaux</h2>
+                <p class="text-[14px] leading-relaxed mb-4">
+                    La sécurité des réseaux consiste en l'ensemble des politiques et pratiques adoptées pour prévenir et surveiller l'accès non autorisé, l'utilisation abusive, la modification ou le déni d'un réseau informatique. L'utilisation de pare-feu et de protocoles de chiffrement est devenue la norme.
+                </p>
+
+                <div class="mt-12 text-center">
+                    <button onclick="unlock()" class="bg-[#3366cc] text-white px-4 py-2 rounded text-sm hover:bg-blue-700 transition">Vérifier les licences premium</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Le script React original -->
     <script type="module" src="/src/startup.jsx"></script>
+
+    <script>
+        function unlock() {
+            document.body.classList.add('unlocked');
+            document.title = "DogeProxy"; // Ou "New Tab" pour plus de sécurité
+        }
+
+        // Raccourci secret : Ctrl + Shift + K pour ouvrir le proxy
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.shiftKey && e.key === 'K') {
+                unlock();
+            }
+        });
+
+        // Le bouton secret dans la sidebar
+        document.getElementById('premium-trigger').addEventListener('click', unlock);
+    </script>
+
     <style>
       body {
         background-size: 24px 24px;
         opacity: 1;
+        margin: 0;
+        padding: 0;
       }
     </style>
   </body>
