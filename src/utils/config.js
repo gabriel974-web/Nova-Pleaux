@@ -30,131 +30,7 @@ export const themeConfig = [
       tabBarColor: "#070e15",
       omninputColor: "#06080d8f",
       menuColor: "#1a252f"
-    },
-  },
-  {
-    option: 'Mocha',
-    value: {
-      theme: 'mocha',
-      type: 'dark',
-      settingsContainerColor: '#312222',
-      navItemActive: '#fdedea',
-      settingsSearchBar: '#312929',
-      settingsPanelItemBackgroundColor: '#3d2a2a',
-      settingsDropdownColor: '#291c1c',
-      siteTextColor: '#c7bab8',
-      bgDesignColor: '65, 47, 47',
-      glowWrapperColor: '255, 255, 255',
-      switchColor: '#463131',
-      switchEnabledColor: '#7c5f5f',
-      bgColor: '#1a1514',
-      quickModalBgColor: '#362c2c',
-      paginationTextColor: '#c3b6b6',
-      paginationBorderColor: '#ffffff1c',
-      paginationBgColor: '#231b15',
-      paginationSelectedColor: '#956f6f',
-      themeName: 'mochaTheme',
-      /* loader */
-      tabColor: "#221a1a",
-      tabOutline: "#3e3b3b",
-      barColor: "#221a1a",
-      tabBarColor: "#151313",
-      omninputColor: "#1714148f",
-      menuColor: "#282323"
-    },
-  },
-  {
-    option: 'Forest',
-    value: {
-      theme: 'forest',
-      type: 'dark',
-      settingsContainerColor: '#17281f',
-      navItemActive: '#d4f3e1',
-      settingsSearchBar: '#274233',
-      settingsPanelItemBackgroundColor: '#315b45',
-      settingsDropdownColor: '#15261c',
-      siteTextColor: '#bfe5cf',
-      bgDesignColor: '46, 66, 54',
-      glowWrapperColor: '232, 255, 243',
-      switchColor: '#375644',
-      switchEnabledColor: '#3f7a5a',
-      bgColor: '#0c1711',
-      quickModalBgColor: '#15261c',
-      paginationTextColor: '#cbe9cf',
-      paginationBorderColor: '#ffffff1c',
-      paginationBgColor: '#1d2d22',
-      paginationSelectedColor: '#7ca387c4',
-      themeName: 'forestTheme',
-      /* loader */
-      tabColor: "#162218",
-      tabOutline: "#2d3e28",
-      barColor: "#162218",
-      tabBarColor: "#131513",
-      omninputColor: "#1714148f",
-      menuColor: "#1d221d"
-    },
-  },
-  {
-    option: 'Dark',
-    value: {
-      theme: 'dark',
-      type: 'dark',
-      settingsContainerColor: '#18181c',
-      navItemActive: '#f3f4f6',
-      settingsSearchBar: '#1f1f23',
-      settingsPanelItemBackgroundColor: '#2e2e34',
-      settingsDropdownColor: '#151519',
-      siteTextColor: '#fff',
-      bgDesignColor: '73, 73, 73',
-      glowWrapperColor: '255, 255, 255',
-      switchColor: '#1f1f23',
-      switchEnabledColor: '#3b3b44',
-      bgColor: '#0b0b0e',
-      quickModalBgColor: '#2d2d30',
-      paginationTextColor: '#c9c9c9',
-      paginationBorderColor: '#ffffff1c',
-      paginationBgColor: '#1a1a1a',
-      paginationSelectedColor: '#858585',
-      themeName: 'darkTheme',
-      /* loader */
-      tabColor: "#1a1a1a",
-      tabOutline: "#353535",
-      barColor: "#191a19",
-      tabBarColor: "#0d0d0d",
-      omninputColor: "#0b0a0a8f",
-      menuColor: "#1c1c1c"
-    },
-  },
-  {
-    option: 'Stellar',
-    value: {
-      theme: 'stellar',
-      type: 'dark',
-      settingsContainerColor: '#141620',
-      navItemActive: '#9db4ff',
-      settingsSearchBar: '#232538',
-      settingsPanelItemBackgroundColor: '#2d2f44',
-      settingsDropdownColor: '#181a26',
-      siteTextColor: '#d6daff',
-      bgDesignColor: '127, 127, 127',
-      glowWrapperColor: '136, 169, 255',
-      switchColor: '#25273a',
-      switchEnabledColor: '#5560a4',
-      bgColor: '#0a0b14',
-      quickModalBgColor: '#24263a',
-      paginationTextColor: '#c5c8e6',
-      paginationBorderColor: '#ffffff1c',
-      paginationBgColor: '#1a1b29',
-      paginationSelectedColor: '#7f89d9',
-      themeName: 'stellarTheme',
-      /* loader */
-      tabColor: "#16161c",
-      tabOutline: "#343540",
-      barColor: "#14141a",
-      tabBarColor: "#0e0e13",
-      omninputColor: "#0a0b0f8f",
-      menuColor: "#18151c"
-    },
+   },
   },
 
   {
@@ -179,37 +55,6 @@ export const themeConfig = [
       paginationBgColor: '#ffffff',
       paginationSelectedColor: '#797979b8',
       themeName: 'lightTheme',
-      /* loader */
-      tabColor: "#ffffff",
-      tabOutline: "#b2b2b2",
-      barColor: "#ffffff",
-      tabBarColor: "#d0d0d0",
-      omninputColor: "#c6c6c68f",
-      menuColor: "#fff"
-    },
-  },
-  {
-    option: 'Paper',
-    value: {
-      theme: 'paper',
-      type: 'light',
-      settingsContainerColor: '#e6dec7',
-      navItemActive: '#1f2937',
-      settingsSearchBar: '#ebe3cd',
-      settingsPanelItemBackgroundColor: '#efe7cf',
-      settingsDropdownColor: '#fffbeb',
-      siteTextColor: '#474b52',
-      bgDesignColor: '155, 150, 132',
-      glowWrapperColor: '225, 225, 73',
-      switchColor: '#c3baa6',
-      switchEnabledColor: '#c7bfa8',
-      bgColor: '#fefbf5',
-      quickModalBgColor: '#fffbeb',
-      paginationTextColor: '#4c4c4c',
-      paginationBorderColor: '#d1d1d1',
-      paginationBgColor: '#fffaea',
-      paginationSelectedColor: '#494436b8',
-      themeName: 'paperTheme',
       /* loader */
       tabColor: "#ffffff",
       tabOutline: "#b2b2b2",
@@ -302,16 +147,7 @@ export const meta = [
 ];
 
 export const searchConfig = [
-  {
-    option: 'Google',
-    value: {
-      engineName: 'Google',
-      engine: 'https://www.google.com/search?q=',
-      engineIcon:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/120px-Google_Favicon_2025.svg.png',
-    },
-  },
-  {
+ {
     option: 'DuckDuckGo',
     value: {
       engineName: 'DuckDuckGo',
@@ -518,20 +354,8 @@ export const navScaleConfig = [
 ];
 
 export const prConfig = [
-  {
-    option: 'Automatic',
-    value: {
-      prType: 'auto',
-    },
-  },
-  {
-    option: 'Ultraviolet only',
-    value: {
-      prType: 'uv',
-    },
-  },
-  {
-    option: 'Scramjet only',
+   {
+    option: 'Scramjet by Gabriel',
     value: {
       prType: 'scr',
     },
